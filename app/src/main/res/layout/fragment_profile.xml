@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/user_image_size"
+        android:layout_height="@dimen/user_image_size"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userTag"
+        style="@style/text_appearance"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userImage" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userVideos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTag" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userFollowings"
+        style="@style/text_appearance"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toStartOf="@+id/userFans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userVideos"
+        tools:text="45678" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userFans"
+        style="@style/text_appearance"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toStartOf="@+id/userHearts"
+        app:layout_constraintStart_toEndOf="@+id/userFollowings"
+        app:layout_constraintTop_toBottomOf="@+id/userVideos"
+        tools:text="4567" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userHearts"
+        style="@style/text_appearance"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/userFans"
+        app:layout_constraintTop_toBottomOf="@+id/userVideos"
+        tools:text="567" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/followingsText"
+        style="@style/text_appearance"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="@+id/userFollowings"
+        app:layout_constraintStart_toStartOf="@+id/userFollowings"
+        app:layout_constraintTop_toBottomOf="@+id/userFollowings" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fansText"
+        style="@style/text_appearance"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="@+id/userFans"
+        app:layout_constraintStart_toStartOf="@+id/userFans"
+        app:layout_constraintTop_toBottomOf="@+id/userFans" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/heartsText"
+        style="@style/text_appearance"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="@+id/userHearts"
+        app:layout_constraintStart_toStartOf="@+id/userHearts"
+        app:layout_constraintTop_toBottomOf="@+id/userHearts" />
+
+    <Button
+        android:id="@+id/editProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/red"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/followingsText"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/userBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

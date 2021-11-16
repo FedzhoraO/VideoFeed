@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="videos">
+        <item quantity="one">video</item>
+        <item quantity="other">videos</item>
+    </plurals>
+    <plurals name="hearts">
+        <item quantity="one">Heart</item>
+        <item quantity="other">Hearts</item>
+    </plurals>
+    <plurals name="fans">
+        <item quantity="one">Fan</item>
+        <item quantity="other">Fans</item>
+    </plurals>
+    <plurals name="followings">
+        <item quantity="one">Following</item>
+        <item quantity="other">Followings</item>
+    </plurals>
+</resources>
